@@ -15,8 +15,6 @@ class ViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     var photos : [Photo]!
     
-    let iOS8 = floor(NSFoundationVersionNumber) > floor(NSFoundationVersionNumber_iOS_7_1)
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,11 +26,8 @@ class ViewController: UIViewController, UITableViewDataSource {
             photos = result
         }
         
-        if iOS8 {
-            
-            tableView.rowHeight = UITableViewAutomaticDimension
-            tableView.estimatedRowHeight = 102
-        }
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 102
 
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "preferredFontChanged:", name: UIContentSizeCategoryDidChangeNotification, object: nil)
 
