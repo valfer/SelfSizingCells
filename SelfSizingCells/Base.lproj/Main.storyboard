@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SelfSizingCells" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="103" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="oeP-lI-h90">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="photoCell" id="rzQ-ci-DUa" customClass="PhotoCell" customModule="SelfSizingCells" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rzQ-ci-DUa" id="qgY-pg-SNd">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="21" text="Descrizione" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4x-as-5qR">
+                                                    <rect key="frame" x="20" y="61" width="560" height="21"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="21" text="Titolo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIp-DI-YQo">
+                                                    <rect key="frame" x="20" y="20" width="560" height="21"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="U4x-as-5qR" firstAttribute="leading" secondItem="qgY-pg-SNd" secondAttribute="leading" constant="20" id="Bym-qL-0Ba"/>
+                                                <constraint firstItem="DIp-DI-YQo" firstAttribute="top" secondItem="qgY-pg-SNd" secondAttribute="top" constant="20" id="FZd-Ee-FJE"/>
+                                                <constraint firstAttribute="bottom" secondItem="U4x-as-5qR" secondAttribute="bottom" constant="20" id="VgL-G7-YE9"/>
+                                                <constraint firstItem="DIp-DI-YQo" firstAttribute="leading" secondItem="qgY-pg-SNd" secondAttribute="leading" constant="20" id="kPv-lo-Z9Z"/>
+                                                <constraint firstAttribute="trailing" secondItem="DIp-DI-YQo" secondAttribute="trailing" constant="20" id="mxO-MB-HQL"/>
+                                                <constraint firstItem="U4x-as-5qR" firstAttribute="top" secondItem="DIp-DI-YQo" secondAttribute="bottom" constant="20" id="uof-ul-dog"/>
+                                                <constraint firstAttribute="trailing" secondItem="U4x-as-5qR" secondAttribute="trailing" constant="20" id="wiO-bv-Cq1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descrLabel" destination="U4x-as-5qR" id="1DM-1k-QFZ"/>
+                                            <outlet property="titoloLabel" destination="DIp-DI-YQo" id="dZa-Vs-s3w"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="mNl-g9-Wnf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oeP-lI-h90" secondAttribute="bottom" id="GyF-Ff-T6A"/>
+                            <constraint firstItem="oeP-lI-h90" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JL2-Rb-phY"/>
+                            <constraint firstAttribute="trailing" secondItem="oeP-lI-h90" secondAttribute="trailing" id="JhX-wx-2QM"/>
+                            <constraint firstItem="oeP-lI-h90" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="atd-Ll-blb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="oeP-lI-h90" id="Adt-Tt-fkg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
