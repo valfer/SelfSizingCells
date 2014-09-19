@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhotoCell : UITableViewCell {
+class SelfSizingCell : UITableViewCell {
     
     @IBOutlet weak var titoloLabel : UILabel!
     @IBOutlet weak var descrLabel : UILabel!

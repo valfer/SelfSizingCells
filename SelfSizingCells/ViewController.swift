@@ -45,7 +45,7 @@ class ViewController: UIViewController, UITableViewDataSource {
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell : PhotoCell = tableView.dequeueReusableCellWithIdentifier(kPhotoCellIdentifier, forIndexPath: indexPath) as PhotoCell
+        let cell : SelfSizingCell = tableView.dequeueReusableCellWithIdentifier(kPhotoCellIdentifier, forIndexPath: indexPath) as SelfSizingCell
         
         let photo = photos[indexPath.row]
         cell.titoloLabel.text = photo.titolo

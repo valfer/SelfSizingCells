@@ -16,7 +16,7 @@
 		D93281BA19CB0D8D007C7B8C /* photos.txt in Resources */ = {isa = PBXBuildFile; fileRef = D93281B919CB0D8D007C7B8C /* photos.txt */; };
 		D93281BC19CB0D95007C7B8C /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93281BB19CB0D95007C7B8C /* Parser.swift */; };
 		D93281BE19CB0D9A007C7B8C /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93281BD19CB0D9A007C7B8C /* Photo.swift */; };
-		D93281C019CB104B007C7B8C /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93281BF19CB104B007C7B8C /* PhotoCell.swift */; };
+		D93281C019CB104B007C7B8C /* SelfSizingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93281BF19CB104B007C7B8C /* SelfSizingCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 		D93281B919CB0D8D007C7B8C /* photos.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = photos.txt; sourceTree = "<group>"; };
 		D93281BB19CB0D95007C7B8C /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		D93281BD19CB0D9A007C7B8C /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
-		D93281BF19CB104B007C7B8C /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		D93281BF19CB104B007C7B8C /* SelfSizingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfSizingCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,7 @@
 				D932819919CB0D44007C7B8C /* AppDelegate.swift */,
 				D932819B19CB0D44007C7B8C /* ViewController.swift */,
 				D932819D19CB0D44007C7B8C /* Main.storyboard */,
-				D93281BF19CB104B007C7B8C /* PhotoCell.swift */,
+				D93281BF19CB104B007C7B8C /* SelfSizingCell.swift */,
 				D93281A019CB0D44007C7B8C /* Images.xcassets */,
 				D93281A219CB0D44007C7B8C /* LaunchScreen.xib */,
 				D93281BD19CB0D9A007C7B8C /* Photo.swift */,
@@ -226,7 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D93281BE19CB0D9A007C7B8C /* Photo.swift in Sources */,
-				D93281C019CB104B007C7B8C /* PhotoCell.swift in Sources */,
+				D93281C019CB104B007C7B8C /* SelfSizingCell.swift in Sources */,
 				D932819C19CB0D44007C7B8C /* ViewController.swift in Sources */,
 				D932819A19CB0D44007C7B8C /* AppDelegate.swift in Sources */,
 				D93281BC19CB0D95007C7B8C /* Parser.swift in Sources */,
@@ -425,6 +425,7 @@
 				D93281B519CB0D44007C7B8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D93281B619CB0D44007C7B8C /* Build configuration list for PBXNativeTarget "SelfSizingCellsTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +434,7 @@
 				D93281B819CB0D44007C7B8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
